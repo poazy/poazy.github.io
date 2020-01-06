@@ -15,8 +15,8 @@ type: page
 
 ## 联系我
 
-* GitHub：[流易](https://github.com/poazy)
-* email：boazy@126.com
+* GitHub：[https://github.com/poazy](https://github.com/poazy)
+* Email：boazy@126.com
 
 ## Comments
 
