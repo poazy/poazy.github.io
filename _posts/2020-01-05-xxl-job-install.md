@@ -2,14 +2,13 @@
 layout: post
 title:  "Docker 安装 xxl-job-admin"
 date:   2020-01-05 22:58:11
-categories: JavaScript
-tags: JavaScript Ajax URL HistoryApi pushState pjax
+categories: XXL-JOB
+tags: XXL-JOB Install
+author: poazy
 ---
 
 * content
 {:toc}
-
-[TOC]
 
 # 安装环境
 ## OS 版本
