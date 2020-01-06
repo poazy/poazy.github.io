@@ -7,7 +7,7 @@
 
 # Site settings
 title: 流易
-brief-intro: Front-end Dev Engineer
+brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://poazy.github.io" # the base hostname & protocol for your site
 
@@ -16,7 +16,7 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: 
 facebook_username: 
-github_username:  poazy
+github_username: poazy
 email: boazy@126.com
 weibo_username: 
 zhihu_username: 
