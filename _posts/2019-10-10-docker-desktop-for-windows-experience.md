@@ -10,10 +10,6 @@ author: poazy
 * content
 {:toc}
 
-# Docker Desktop for Windows Experience
-
-[TOC]
-
 ## 安装 Docker CE 之前
 
 ### 试验目标

@@ -10,7 +10,7 @@ author: poazy
 * content
 {:toc}
 
-
+> 对 Linux（CentOS 7）执行的 `top` 命令结果信息进行解释。
 
 # top 命令
 ```bash
@@ -27,18 +27,6 @@ KiB Swap:  2097148 total,  1386784 free,   710364 used.  3135480 avail Mem
  2724 root      20   0 1221272  24980   2752 S   1.3  0.4  14:43.68 containerd
  2728 root      20   0  743372  56048   5548 S   1.3  0.9  21:16.52 dockerd
   654 root      20   0  109092   6616   2408 S   0.7  0.1   4:35.33 containerd-shim
- 3055 polkitd   20   0 1885108 363416   5880 S   0.7  6.1   9:33.41 mysqld
- 4044 root      20   0  109092   9432   2448 S   0.7  0.2   4:34.29 containerd-shim
- 4116 root      20   0  109092   9692   2344 S   0.7  0.2   4:41.06 containerd-shim
-32678 root      20   0  109092   9004   2356 S   0.7  0.2   4:45.97 containerd-shim
-   14 root      20   0       0      0      0 S   0.3  0.0   0:52.17 ksoftirqd/1
- 2442 root      20   0  109092   6596   2076 S   0.3  0.1   4:43.15 containerd-shim
- 3980 200       20   0 4342488 334796   5904 S   0.3  5.6  30:51.99 java
- 4086 vagrant   20   0 4096480 720024   6392 S   0.3 12.1   6:44.82 java
-28508 root      20   0   13124   1692   1328 S   0.3  0.0   0:01.46 bash
-    1 root      20   0  128280   5264   3176 S   0.0  0.1   2:42.23 systemd
-    2 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kthreadd
-    3 root      20   0       0      0      0 S   0.0  0.0   0:55.85 ksoftirqd/0
 ```
 
 # top 信息解释
