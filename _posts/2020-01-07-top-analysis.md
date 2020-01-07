@@ -37,21 +37,6 @@ KiB Swap:  2097148 total,  1386784 free,   710364 used.  3135480 avail Mem
     1 root      20   0  128280   5264   3176 S   0.0  0.1   2:42.23 systemd
     2 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kthreadd
     3 root      20   0       0      0      0 S   0.0  0.0   0:55.85 ksoftirqd/0
-    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H
-    6 root      20   0       0      0      0 S   0.0  0.0   0:21.78 kworker/u4:0
-    7 root      rt   0       0      0      0 S   0.0  0.0   0:11.19 migration/0
-    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
-    9 root      20   0       0      0      0 S   0.0  0.0   8:09.00 rcu_sched
-   10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain
-   11 root      rt   0       0      0      0 S   0.0  0.0   0:02.54 watchdog/0
-   12 root      rt   0       0      0      0 S   0.0  0.0   0:02.13 watchdog/1
-   13 root      rt   0       0      0      0 S   0.0  0.0   0:14.15 migration/1
-   16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H
-   18 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs
-   19 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 netns
-   20 root      20   0       0      0      0 S   0.0  0.0   0:00.31 khungtaskd
-   21 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 writeback
-   22 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kintegrityd
 ```
 
 # top 信息解释
