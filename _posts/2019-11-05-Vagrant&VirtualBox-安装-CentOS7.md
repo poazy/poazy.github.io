@@ -2,8 +2,8 @@
 layout: post
 title:  "Vagrant&VirtualBox 安装 CentOS 7"
 date:   2019-11-05 00:00:00
-categories: Docker
-tags: Windows Docker DockerDesktop
+categories: VirtualBox
+tags: VirtualBox Vagrant CentOS Install
 author: poazy
 ---
 
