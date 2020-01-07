@@ -11,7 +11,7 @@ brief-intro:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://poazy.github.io" # the base hostname & protocol for your site
 
-permalink: /:year/:month/:day/:title/
+permalink: /posts:year-:month-:day-:title.html
 
 # other links
 twitter_username: 

@@ -44,25 +44,25 @@ KiB Swap:  2097148 total,  1386784 free,   710364 used.  3135480 avail Mem
 # top 信息解释
 ## 第一行信息
 
-![]({{site.url}}/images/20200107-top/top-1.png)
+![](./images/20200107-top/top-1.png)
 
 ## 第二行信息
 
-![]({{site.url}}/images/20200107-top/top-2.png)
+![](./images/20200107-top/top-2.png)
 
 ## 第三行信息
 
-![]({{site.url}}/images/20200107-top/top-3.png)
+![](./images/20200107-top/top-3.png)
 
 ## 第四行信息
 
-![]({{site.url}}/images/20200107-top/top-4.png)
+![](./images/20200107-top/top-4.png)
 
 ## 每五行信息
 
-![]({{site.url}}/images/20200107-top/top-5.png)
+![](./images/20200107-top/top-5.png)
 
 ## 进程信息
 
-![]({{site.url}}/images/20200107-top/top-6.png)
+![](./images/20200107-top/top-6.png)
 
