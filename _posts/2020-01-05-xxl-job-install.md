@@ -36,7 +36,7 @@ Docker version 19.03.5, build 633a0ea
 * 本次 `mysql 数据库` 采用 docker 方式搞了一个给使用
 * 在此前  `mysql 数据库` 已安装准备好了
 
-```查询结果
+```bash
 [root@centos7-qscft ~]# docker ps -a | grep mysql
 6bc169b80e0a  mysql:8.0.18  "docker-entrypoint.s…"  2 hours ago  Up 2 hours  0.0.0.0:3306->3306/tcp, 33060/tcp  mysql
 [root@centos7-qscft ~]#
@@ -60,7 +60,7 @@ vi /etc/hosts
 wget https://raw.githubusercontent.com/xuxueli/xxl-job/master/doc/db/tables_xxl_job.sql
 ```
 
-```命令执行结果
+```bash
 [root@centos7-qscft ~]# vi /etc/hosts
 [root@centos7-qscft ~]# cat /etc/hosts
 127.0.0.1       centos7-qscft   centos7-qscft
@@ -102,7 +102,7 @@ total 24K
 docker cp tables_xxl_job.sql mysql:/tmp
 ```
 
-```命令执行结果
+```bash
 [root@centos7-qscft ~]# pwd
 /root
 [root@centos7-qscft ~]# ll -h
@@ -128,7 +128,7 @@ docker exec -it mysql mysql -u root -p --default-character-set=utf8
 source /tmp/tables_xxl_job.sql
 ```
 
-```命令执行结果
+```bash
 [root@centos7-qscft ~]# docker exec -it mysql mysql -u root -p --default-character-set=utf8
 Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -207,7 +207,7 @@ Bye
 
 ## 查找镜像
 
-```url
+```
 https://hub.docker.com/r/xuxueli/xxl-job-admin/tags
 ```
 
@@ -230,7 +230,7 @@ docker run -d --restart=always --name xxl-job-admin \
 ### PAPAMS 属性信息可以通过 https://github.com/xuxueli/xxl-job/blob/master/xxl-job-admin/src/main/resources/application.properties 查看
 ```
 
-```运行结果
+```bash
 [root@centos7-qscft ~]# docker ps -al | grep xxl-job-admin
 fb811fcbebcf        xuxueli/xxl-job-admin:2.1.2   "sh -c 'java -jar /a…"   4 minutes ago       Up 4 minutes        0.0.0.0:8180->8080/tcp   xxl-job-admin
 [root@centos7-qscft ~]#
@@ -266,7 +266,7 @@ fb811fcbebcf        xuxueli/xxl-job-admin:2.1.2   "sh -c 'java -jar /a…"   4 m
 
 ```
 
-```运行结果
+```bash
 
 ```
 
