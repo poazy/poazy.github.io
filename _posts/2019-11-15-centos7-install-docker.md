@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CentOS 7 安装 Docker"
-date:   2019-11-15 23:35:08
+date:   2019-11-15 00:00:00
 categories: Docker
 tags: CentOS Docker Install
 author: poazy
