@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "top 命令信息解释"
+title:  "top 命令的执行结果解释"
 date:   2020-01-07 00:00:00
 categories: Linux
 tags: Linux
@@ -10,7 +10,7 @@ author: poazy
 * content
 {:toc}
 
-> 对 Linux（CentOS 7）执行的 `top` 命令结果信息进行解释。
+> 对 Linux（CentOS 7） `top` 命令的执行结果进行解释。
 
 
 

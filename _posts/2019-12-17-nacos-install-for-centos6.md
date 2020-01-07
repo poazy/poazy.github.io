@@ -9,8 +9,12 @@ author: poazy
 
 * content
 {:toc}
+> 基于 `Docker 1.7.1` 版本创建并运行 `nacos/nacos-server 1.1.4` 容器。
+
+
 
 # 安装环境
+
 ## OS 版本
 
 * CentOS release 6.5 (Final)

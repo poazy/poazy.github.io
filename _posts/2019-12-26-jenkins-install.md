@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> 基于 `docker 19.03.5` 版本创建并运行 `jenkins/jenkins:2.210` 容器。
+
+
 
 # 安装环境
 
