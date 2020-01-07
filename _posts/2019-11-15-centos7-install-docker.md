@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> `CentOS 7` 安装 `Docker` 和 `Docker Compose` 。
+
+
 
 # 安装 Docker
 
@@ -27,12 +30,6 @@ yum remove docker \
     docker-engine \
     docker-ce-cli
 ```
-
-
-
-> `CentOS 7` 安装 `Docker` 和 `Docker Compose` 。
-
-
 
 ## 安装 Docker
 
