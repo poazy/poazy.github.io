@@ -9,10 +9,13 @@ author: poazy
 
 * content
 {:toc}
+> 解决 IDEA 运行 Spring Boot 应用时报命令过长问题
 
-# IDEA 运行 Spring Boot 应用时报命令过长问题
 
-## IDEA 提示错误信息
+
+# IDEA 提示错误信息
+
+* IDEA 运行 Spring Boot 应用时报命令过长问题
 
 ```
 Error running 'XxxApplication':
@@ -21,9 +24,7 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 
 ![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-00.png)
 
-## 解决方案
-
-### 【方案一】workspace.xml
+# 【解决方案一】workspace.xml
 
 * 对本工程下所有的 Spring Boot XxxApplication 生效，不用对一个一个的 XxxApplication 设置配置
 
@@ -31,7 +32,7 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 
 ![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-01.png)
 
-### 【方案二】Run/Debug Configurations
+# 【解决方案二】Run/Debug Configurations
 
 * 要对本工程下所有的 Spring Boot XxxApplication 设置配置，设置配置一个 XxxApplication 就只对这个设置配置过的 XxxApplicaiton 生效
 

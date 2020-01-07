@@ -30,6 +30,10 @@ yum remove docker \
 
 
 
+> `CentOS 7` 安装 `Docker` 和 `Docker Compose` 。
+
+
+
 ## 安装 Docker
 
 ### 安装依懒

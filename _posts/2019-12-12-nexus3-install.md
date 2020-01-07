@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> 基于 `docker 19.03.5` 版本创建并运行 `sonatype/nexus3 3.19.1` 容器。
+
+
 
 # 安装环境
 

@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> CentOS 6 安装 `Docker` 和 `Docker Compose` 。
+
+
 
 # 安装 Docker
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "top 命令的执行结果解释"
+title:  "对 top 命令的执行结果解释"
 date:   2020-01-07 00:00:00
 categories: Linux
 tags: Linux

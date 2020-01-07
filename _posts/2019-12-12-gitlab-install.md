@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> 基于 `docker 19.03.5` 版本创建并运行 `gitlab/gitlab-ce 12.5.4` 容器。
+
+
 
 # 安装环境
 

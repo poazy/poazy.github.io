@@ -9,6 +9,9 @@ author: poazy
 
 * content
 {:toc}
+> 基于 `Vagrant` 和 `Virtual Box` 虚拟化技术安装 `CentOS 7` 。
+
+
 
 # Vagrant + Virtual Box 安装 CentOS 7
 

@@ -252,26 +252,3 @@ Up 4 minutes        0.0.0.0:8180->8080/tcp   xxl-job-admin
 
 * 官方没有 xxl-job-executor-sample-xxx 镜像
 * 自己搞吧
-
-## 查询镜像
-
-```
-
-```
-
-## 拉取镜像
-
-```bash
-
-```
-
-## 运行镜像
-
-```bash
-
-```
-
-```bash
-
-```
-
