@@ -31,7 +31,7 @@ author: poazy
 
 点击以下链接下载 [Stable](https://download.docker.com/win/stable/Docker for Windows Installer.exe) 或 [Edge](https://download.docker.com/win/edge/Docker Desktop Installer.exe) 版本的 [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)。
 
-![](images/20191010-docker-desktop-windows/get-docker-desktop-for-windows.png)
+![](../images/20191010-docker-desktop-windows/get-docker-desktop-for-windows.png)
 
 ***本文以下载 Stable 版本为例。***
 
@@ -41,7 +41,7 @@ author: poazy
 
 * 安装好后，查看 `About Docker Desktop`
 
-![About Docker Desktop](images/20191010-docker-desktop-windows/about-docker-dektop.png)
+![About Docker Desktop](../images/20191010-docker-desktop-windows/about-docker-dektop.png)
 
 ## 配置镜像加速
 
@@ -53,9 +53,9 @@ author: poazy
 
 * 中科大镜像 `https://docker.mirrors.ustc.edu.cn`
 
-![](images/20191010-docker-desktop-windows/settings-daemon.png)
+![](../images/20191010-docker-desktop-windows/settings-daemon.png)
 
-![](images/20191010-docker-desktop-windows/settings-daemon-advanced.png)
+![](../images/20191010-docker-desktop-windows/settings-daemon-advanced.png)
 
 ```json
 {
@@ -86,11 +86,11 @@ author: poazy
 
   这里解压后目录为 `D:\Local\kubernetes\client\bin` 
 
-![](images/20191010-docker-desktop-windows/kubectl-dir.png)
+![](../images/20191010-docker-desktop-windows/kubectl-dir.png)
 
 * 将 `kubectl` 加入到 `系统环境变量PATH` 中
 
-  ![](images/20191010-docker-desktop-windows/kubectl-home&path.png)
+  ![](../images/20191010-docker-desktop-windows/kubectl-home&path.png)
 
 * 执行 `kubectl` 命令检查是否OK
 
@@ -98,7 +98,7 @@ author: poazy
   kubectl version
   ```
 
-  ![](images/20191010-docker-desktop-windows/kubectl-version.png)
+  ![](../images/20191010-docker-desktop-windows/kubectl-version.png)
 
 ### 安装 kubernetes 镜像
 
@@ -136,7 +136,7 @@ author: poazy
 
 * Docker 中激活 Kubernetes
 
-  ![](images/20191010-docker-desktop-windows/docker-enable-kubernetes.png)
+  ![](../images/20191010-docker-desktop-windows/docker-enable-kubernetes.png)
 
 ## 配置 Kubernetes Dashboard
 
@@ -173,7 +173,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/
 kubectl proxy
 ```
 
-![](images/20191010-docker-desktop-windows/kubectl-proxy.png)
+![](../images/20191010-docker-desktop-windows/kubectl-proxy.png)
 
 ### 访问 Kubernetes dashboard
 
@@ -192,15 +192,15 @@ kubectl proxy
 
   **注意**，登陆是出现 `Not enough data to create auth info structure` 时，重新执行本命令即可！
 
-  ![](images/20191010-docker-desktop-windows/kube-config-dir.png)
+  ![](../images/20191010-docker-desktop-windows/kube-config-dir.png)
 
 * 登录 dashboard 的时候选择 `C:\Users\XXX\.kube\config` 文件
 
-  ![](images/20191010-docker-desktop-windows/k8s_credentials.png)
+  ![](../images/20191010-docker-desktop-windows/k8s_credentials.png)
 
 * 点击 `登录` 成功
 
-  ![](images/20191010-docker-desktop-windows/kubernetes-dashboard.png)
+  ![](../images/20191010-docker-desktop-windows/kubernetes-dashboard.png)
 
 ## 安装并运行容器（Redis）
 
@@ -212,7 +212,7 @@ kubectl proxy
 docker search redis[:5.5]
 ```
 
-![](images/20191010-docker-desktop-windows/docker-search-redis.png)
+![](../images/20191010-docker-desktop-windows/docker-search-redis.png)
 
 ### 拉取镜像
 
@@ -220,7 +220,7 @@ docker search redis[:5.5]
 docker pull redis[:5.5]
 ```
 
-![](images/20191010-docker-desktop-windows/docker-pull-redis.png)
+![](../images/20191010-docker-desktop-windows/docker-pull-redis.png)
 
 ### 查看本地镜像
 
@@ -228,7 +228,7 @@ docker pull redis[:5.5]
 docker images
 ```
 
-![](images/20191010-docker-desktop-windows/docker-images.png)
+![](../images/20191010-docker-desktop-windows/docker-images.png)
 
 ### 创建并运行容器
 
@@ -236,7 +236,7 @@ docker images
 docker run -d --restart=always --name redis -p 6379:6379 -v /D/DockerData/redis/data:/data redis:latest --appendonly yes --requirepass "123456"
 ```
 
-![](images/20191010-docker-desktop-windows/docker-run-redis.png)
+![](../images/20191010-docker-desktop-windows/docker-run-redis.png)
 
 ### 列出容器
 
@@ -244,11 +244,11 @@ docker run -d --restart=always --name redis -p 6379:6379 -v /D/DockerData/redis/
 docker ps -as
 ```
 
-![](images/20191010-docker-desktop-windows/docker-ps-as.png)
+![](../images/20191010-docker-desktop-windows/docker-ps-as.png)
 
 ### 客户端接连 redis（检查可用）
 
-![](images/20191010-docker-desktop-windows/connect-docker-redis-test.png)
+![](../images/20191010-docker-desktop-windows/connect-docker-redis-test.png)
 
 ## 用到的 Docker 相关命令
 

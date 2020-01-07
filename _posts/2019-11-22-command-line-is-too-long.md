@@ -19,7 +19,7 @@ Error running 'XxxApplication':
 Command line is too long. Shorten command line for XxxApplication or als for Spring Boot default configuration.
 ```
 
-![](images/20191122-idea-error/2019-11-22-command-line-is-too-long-00.png)
+![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-00.png)
 
 ## 解决方案
 
@@ -29,7 +29,7 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 
 * 在 IDEA 工程目录下的 workspace.xml 文件中的 <component name="PropertiesComponent"> 标签节点中添加 <property name="dynamic.classpath" value="true" /> 属性标签
 
-![](images/20191122-idea-error/2019-11-22-command-line-is-too-long-01.png)
+![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-01.png)
 
 ### 【方案二】Run/Debug Configurations
 
@@ -37,5 +37,5 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 
 * 在 IDEA 选中 `Edit Configurations ` 后在弹出来的 `Run/Debug Configurations `  窗口左侧选 Spring Boot 的应用 -> `Environment` -> `Shorten command line` 选项中选则 `JAR manifest` 或 `classpath file` -> `OK` 就可解决设置的 XxxApplication 启动的错误问题
 
-![](images/20191122-idea-error/2019-11-22-command-line-is-too-long-02.png)
+![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-02.png)
 

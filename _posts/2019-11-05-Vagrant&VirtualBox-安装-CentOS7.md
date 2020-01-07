@@ -168,7 +168,7 @@ root/vagrant
 
 #### 错误描述
 
-![](images/20191105-VV-install-centos/2019-12-10_error.png)
+![](../images/20191105-VV-install-centos/2019-12-10_error.png)
 
 #### 解决方案
 
@@ -180,4 +180,4 @@ bcdedit /set hypervisorlaunchtype off
 
 * 执行完命令后重启计算机，再次尝试成功咯
 
-![](images/20191105-VV-install-centos/2019-12-10_ok.png)
+![](../images/20191105-VV-install-centos/2019-12-10_ok.png)
