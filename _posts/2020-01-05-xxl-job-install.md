@@ -232,7 +232,8 @@ docker run -d --restart=always --name xxl-job-admin \
 
 ```bash
 [root@centos7-qscft ~]# docker ps -al | grep xxl-job-admin
-fb811fcbebcf        xuxueli/xxl-job-admin:2.1.2   "sh -c 'java -jar /a…"   4 minutes ago       Up 4 minutes        0.0.0.0:8180->8080/tcp   xxl-job-admin
+fb811fcbebcf        xuxueli/xxl-job-admin:2.1.2   "sh -c 'java -jar /a…"   4 minutes ago       
+Up 4 minutes        0.0.0.0:8180->8080/tcp   xxl-job-admin
 [root@centos7-qscft ~]#
 ```
 
@@ -250,7 +251,7 @@ fb811fcbebcf        xuxueli/xxl-job-admin:2.1.2   "sh -c 'java -jar /a…"   4 m
 
 ## 查询镜像
 
-```url
+```
 
 ```
 
