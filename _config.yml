@@ -7,7 +7,7 @@
 
 # Site settings
 title: 流易
-brief-intro: 上善若水，水善利万物而不争，处众人之所恶（wù），故几于道。
+brief-intro:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://poazy.github.io" # the base hostname & protocol for your site
 
