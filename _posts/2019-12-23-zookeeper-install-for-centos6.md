@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Docker 安装 Zookeeper"
+title:  "Docker 安装 Zookeeper 基于 CentOS 6"
 date:   2019-12-23 00:00:00
 categories: Zookeeper
 tags: Zookeeper Docker Install
