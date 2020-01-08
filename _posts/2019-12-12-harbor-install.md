@@ -247,7 +247,7 @@ sed -i 's/\.\/common\//\/boazy\/data\/dockerdata\/harbor\/installer\/common\//g'
 
 * 修改前
 
-```docker-compose.yml
+```
 [root@centos7-qscft installer]# cat docker-compose.yml |grep /common/
       - ./common/config/log/logrotate.conf:/etc/logrotate.d/logrotate.conf:z
       - ./common/config/log/rsyslog_docker.conf:/etc/rsyslog.d/rsyslog_docker.conf:z
@@ -267,7 +267,7 @@ sed -i 's/\.\/common\//\/boazy\/data\/dockerdata\/harbor\/installer\/common\//g'
 
 * 修改后
 
-```docker-compose.yml
+```
 [root@centos7-qscft installer]# cat docker-compose.yml |grep /common/
       - /boazy/data/dockerdata/harbor/installer/common/config/log/logrotate.conf:/etc/logrotate.d/logrotate.conf:z
       - /boazy/data/dockerdata/harbor/installer/common/config/log/rsyslog_docker.conf:/etc/rsyslog.d/rsyslog_docker.conf:z
