@@ -127,7 +127,7 @@ rm -rf /boazy/data/dockerdata/nacos-ngx/nginx.conf
 vi /boazy/data/dockerdata/nacos-ngx/nginx.conf
 ```
 
-```nginx.conf
+```
 
 user  nginx;
 worker_processes  1;
