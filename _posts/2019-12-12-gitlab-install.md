@@ -65,14 +65,14 @@ docker run -d \
 
 * 如果宿主机 `22` 端口没有被占用，则直接采用 `-p 22:22` 端口映射时可跳这一章节的设置！
 
-  ```url
+  ```
   # 22 端口的 git clone 地址
   git@gitlab.boazy.com:itp/mgds.git
   ```
 
 * 因为 `22` 端口被宿主机占了，所以上面的端口映射采用的是 `-p 2280:22`，所以要调整 `gitlab` 中的配置为 `2280` 端口
 
-  ```url
+  ```
   # 非 22 端口的 git clone 地址
   ssh://git@gitlab.boazy.com:2280/itp/mgds.git
   ```
