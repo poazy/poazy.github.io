@@ -329,17 +329,15 @@ docker ps -as
 
 ### 复制文件（主机->容器）
 
-* 从主机复制到容器 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
-
 ```bash
+# 从主机复制到容器 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 docker cp /host/path/target [ID/NAMES]:/file/path/within/container
 ```
 
 ### 复制文件（容器->主机）
 
-* 从容器复制到主机 docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
-
 ```bash
+# 从容器复制到主机 docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 docker cp [ID/NAMES]:/file/path/within/container /host/path/target
 ```
 
