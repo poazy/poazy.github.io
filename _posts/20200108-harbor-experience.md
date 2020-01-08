@@ -181,13 +181,13 @@ docker pull 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
 [root@centos7-qscft ~]# docker tag xuxueli/xxl-job-admin:2.1.2 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
 [root@centos7-qscft ~]# docker push 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
 The push refers to repository [192.168.9.241:8082/poazy/xxl-job-admin]
-bb08c9f93966: Layer already exists
-bf8185dc9cb0: Layer already exists
-3b545dd78a02: Layer already exists
-3b6c930e22a7: Layer already exists
-9fed13e1878e: Layer already exists
-0c4ad05a0283: Layer already exists
-dbf4cf3850fd: Layer already exists
+bb08c9f93966: Pushed
+bf8185dc9cb0: Pushed
+3b545dd78a02: Pushed
+3b6c930e22a7: Pushed
+9fed13e1878e: Pushed
+0c4ad05a0283: Pushed
+dbf4cf3850fd: Pushed
 2.1.2: digest: sha256:c72604c8357dd9fbba823f04878be2a7b8bc77cef1e51e8007ee02ec72d9bb59 size: 1784
 [root@centos7-qscft ~]# docker rmi 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
 Untagged: 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
