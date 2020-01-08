@@ -29,7 +29,7 @@ author: poazy
 
 ## 查找 zookeeper 镜像
 
-```url
+```
 https://hub.docker.com/_/zookeeper?tab=tags
 ```
 
