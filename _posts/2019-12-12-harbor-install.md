@@ -134,7 +134,7 @@ hostnamectl
 
 * 修改说明
 
-```readme
+```
 # 将 harbor.yml 中对应的属性值如下调整（根据自身情况设置值）
 # 注释掉 https 下的 port、certificate、private_key 属性（暂不开启 https）
 #https.port
