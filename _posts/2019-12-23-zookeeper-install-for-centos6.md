@@ -64,7 +64,7 @@ mkdir -p /boazy/data/dockerdata/zookeeper/{data,datalog,conf}
 vi /boazy/data/dockerdata/zookeeper/conf/zoo.cfg
 ```
 
-```zoo.cfg
+```
 clientPort=2181
 dataDir=/data
 dataLogDir=/datalog
