@@ -50,6 +50,7 @@ docker login 192.168.9.241:8082
 Username: admin
 Password:
 Error response from daemon: Get https://192.168.9.241:8082/v2/: http: server gave HTTP response to HTTPS client
+[root@centos7-qscft ~]#
 ```
 
 2）设置 `insecure-registries` 属性
