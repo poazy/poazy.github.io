@@ -17,17 +17,17 @@ author: poazy
 
 ## 创建用户
 
-![](../images/20200108-use-harbor/create-user.png)
+![](../images/20200108-harbor-experience/create-user.png)
 
-![](../images/20200108-use-harbor/user-list.png)
+![](../images/20200108-harbor-experience/user-list.png)
 
 ## 创建项目
 
-![](../images/20200108-use-harbor/create-project.png)
+![](../images/20200108-harbor-experience/create-project.png)
 
-![](../images/20200108-use-harbor/project-list.png)
+![](../images/20200108-harbor-experience/project-list.png)
 
-![](../images/20200108-use-harbor/project-detail.png)
+![](../images/20200108-harbor-experience/project-detail.png)
 
 
 
@@ -200,4 +200,4 @@ Status: Downloaded newer image for 192.168.9.241:8082/poazy/xxl-job-admin:2.1.2
 [root@centos7-qscft ~]#
 ```
 
-![](../images/20200108-use-harbor/project-detail-image.png)
+![](../images/20200108-harbor-experience/project-detail-image.png)
