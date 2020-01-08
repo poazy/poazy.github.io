@@ -33,7 +33,7 @@ author: poazy
 
 * 通过官网URL查找所需要的版本
 
-```html
+```
 https://hub.docker.com/r/gitlab/gitlab-ce/tags
 ```
 

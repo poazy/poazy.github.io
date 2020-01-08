@@ -29,7 +29,7 @@ author: poazy
 
 ## 查找 nacos 镜像
 
-```url
+```
 https://hub.docker.com/r/nacos/nacos-server/tags
 ```
 
@@ -82,7 +82,7 @@ nacos/nacos-server:1.1.4
 
 ## 查找 nginx 镜像
 
-```url
+```
 https://hub.docker.com/_/nginx?tab=tags
 ```
 
@@ -174,7 +174,7 @@ http {
 vi /boazy/data/dockerdata/nacos-ngx/conf.d/default.conf
 ```
 
-```default.conf
+```
 server {
     listen       80;
     server_name  localhost;
@@ -244,7 +244,7 @@ nginx:1.15.12
 vi /boazy/data/dockerdata/nacos-ngx/conf.d/nacos_cluster.conf
 ```
 
-```nacos_cluster.conf
+```
 # nacos cluster 节点
 upstream nacos_cluster {
     server 192.168.0.79:8838;
@@ -259,7 +259,7 @@ upstream nacos_cluster {
 vi /boazy/data/dockerdata/nacos-ngx/conf.d/default.conf
 ```
 
-```default.conf
+```
 server {
     listen       80;
     server_name  localhost;

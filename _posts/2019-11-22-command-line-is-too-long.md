@@ -29,7 +29,9 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 * 对本工程下所有的 Spring Boot XxxApplication 生效，不用对一个一个的 XxxApplication 设置配置
 
 * 在 IDEA 工程目录下的 workspace.xml 文件中的 <component name="PropertiesComponent"> 标签节点中添加 <property name="dynamic.classpath" value="true" /> 属性标签
-
+```xml
+<property name="dynamic.classpath" value="true" />
+```
 ![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-01.png)
 
 # 【解决方案二】Run/Debug Configurations

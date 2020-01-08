@@ -29,7 +29,7 @@ author: poazy
 
 ## 查找镜像版本
 
-```html
+```
 https://hub.docker.com/r/jenkins/jenkins/tags
 ```
 
@@ -68,17 +68,17 @@ docker run -d --restart=always --name jenkins \
 
 ### a) 查询加速插件镜像地址
 
-```url
+```
 http://mirrors.jenkins-ci.org/status.html
 ```
 
 * 这里选择中国的地址（ [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/) ）
 
-```url
+```
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/
 ```
 
-```url
+```
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 ```
 
@@ -125,7 +125,7 @@ cat /boazy/data/dockerdata/jenkins_home/secrets/initialAdminPassword
 
 * 文件路径
 
-```path
+```
 /boazy/data/dockerdata/jenkins_home/updates/default.json
 ```
 

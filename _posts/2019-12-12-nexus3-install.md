@@ -29,7 +29,7 @@ author: poazy
 
 ## 查找镜像版本
 
-```html
+```
 https://hub.docker.com/r/sonatype/nexus3/tags
 ```
 
