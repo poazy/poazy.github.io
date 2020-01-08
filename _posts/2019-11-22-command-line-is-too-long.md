@@ -33,6 +33,7 @@ Command line is too long. Shorten command line for XxxApplication or als for Spr
 ```xml
 <property name="dynamic.classpath" value="true" />
 ```
+
 ![](../images/20191122-idea-error/2019-11-22-command-line-is-too-long-01.png)
 
 # 【解决方案二】Run/Debug Configurations
