@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 Harbor"
 date:   2019-12-12 00:00:00
 categories: Harbor
-tags: Harbor Docker Install
+tags: Harbor Docker
 author: poazy
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Vagrant&VirtualBox 安装 CentOS 7"
 date:   2019-11-05 00:00:00
 categories: VirtualBox
-tags: VirtualBox Vagrant CentOS Install
+tags: VirtualBox Vagrant CentOS
 author: poazy
 ---
 

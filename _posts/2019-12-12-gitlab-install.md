@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 GitLab"
 date:   2019-12-12 00:00:00
 categories: GitLab
-tags: GitLab Docker Install
+tags: GitLab Docker
 author: poazy
 ---
 

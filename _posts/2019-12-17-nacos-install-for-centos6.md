@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 Nacos 基于 CentOS 6"
 date:   2019-12-17 00:00:00
 categories: Nacos
-tags: Nacos Docker Install
+tags: Nacos Docker
 author: poazy
 ---
 

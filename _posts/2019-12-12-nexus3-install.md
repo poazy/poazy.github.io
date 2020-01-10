@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 Sonatype Nexus 3"
 date:   2019-12-12 00:00:00
 categories: Nexus
-tags: Nexus Docker Install
+tags: Nexus Docker
 author: poazy
 ---
 

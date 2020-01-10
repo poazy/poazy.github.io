@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 xxl-job-admin"
 date:   2020-01-05 00:00:00
 categories: 调度任务
-tags: XXL-JOB Docker Install
+tags: XXL-JOB Docker
 author: poazy
 ---
 

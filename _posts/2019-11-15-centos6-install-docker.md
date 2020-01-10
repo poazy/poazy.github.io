@@ -3,7 +3,7 @@ layout: post
 title:  "CentOS 6 安装 Docker"
 date:   2019-11-15 00:00:00
 categories: Docker
-tags: CentOS Docker Install
+tags: CentOS Docker
 author: poazy
 ---
 

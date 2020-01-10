@@ -3,7 +3,7 @@ layout: post
 title:  "Docker 安装 Jenkins"
 date:   2019-12-26 00:00:00
 categories: Jenkins
-tags: Jenkins Docker Install
+tags: Jenkins Docker
 author: poazy
 ---
 

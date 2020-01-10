@@ -3,7 +3,7 @@ layout: post
 title:  "CentOS 7 安装 JDK、Maven、Git"
 date:   2019-11-26 00:00:00
 categories: CentOS
-tags: CentOS Java Maven Git Install
+tags: CentOS Java Maven Git
 author: poazy
 ---
 
