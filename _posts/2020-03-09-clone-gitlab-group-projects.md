@@ -36,7 +36,7 @@ sh clone-gitlab-projects.sh 25
 ```bash
 #!/usr/bin/env bash
 
-BASE_PATH="http://gitlab.dsmm.com/"
+BASE_PATH="http://gitlab.xxx.com/"
 
 if [ -z "$1" ]
   then echo "group name is required."
@@ -116,24 +116,24 @@ cd permission
 > 以下是创建命令结果展示：
 
 ```bash
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects
 $ pwd
 /e/projects
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects
 $ mkdir permission
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects
 $ cd permission/
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ pwd
 /e/projects/permission
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ ls
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $
 ```
 
@@ -152,17 +152,17 @@ vi clone-gitlab-projects.sh
 > 以下是创建命令结果展示：
 
 ```bash
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ pwd
 /e/projects/permission
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ ls
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ vi clone-gitlab-projects.sh
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $ cat clone-gitlab-projects.sh
 #!/usr/bin/env bash
 
@@ -201,7 +201,7 @@ for REPO_SSH_URL in $REPO_SSH_URLS; do THEPATH=$(echo "$REPO_SSH_URL" | awk -F'/
         (cd "$THEPATH" && git pull --quiet) &
     fi done
 
-duanbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
+dxxxbo@DESKTOP-OFUA77Q MINGW64 /e/projects/permission
 $
 ```
 
