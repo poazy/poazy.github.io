@@ -181,7 +181,7 @@ cat harbor.yml
 
 ```bash
 [root@centos7-qscft installer]# ./prepare
-prepare base dir is set to /dsmm/data/dockerdata/harbor/installer
+prepare base dir is set to /boazy/data/dockerdata/harbor/installer
 Unable to find image 'goharbor/prepare:v1.10.0' locally
 v1.10.0: Pulling from goharbor/prepare
 b950b5dd94ab: Downloading [====================>                              ]  6.028MB/14.68MB
