@@ -52,6 +52,7 @@ docker run -d \
 	--restart=always \
 	--privileged=true \
 	-v /boazy/data/dockerdata/nexus-data:/nexus-data \
+    -v /etc/localtime:/etc/localtime:ro \
 	-e INSTALL4J_ADD_VM_PARAMS="-Duser.timezone=Asia/Shanghai" \
 	sonatype/nexus3:3.19.1
 ```
