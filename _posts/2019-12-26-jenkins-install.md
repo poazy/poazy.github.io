@@ -33,13 +33,13 @@ author: poazy
 https://hub.docker.com/r/jenkins/jenkins/tags
 ```
 
-* 选择 `jenkins/jenkins:2.210` 版本
+* 选择 `jenkins/jenkins:2.210-centos` 版本
 
 ## 拉取 jenkins 镜像
 
 ```bash
 # 拉取镜像（可跳过）
-docker pull jenkins/jenkins:2.210
+docker pull jenkins/jenkins:2.210-centos
 ```
 
 ## 创建 jenkins_home 目录
@@ -58,7 +58,9 @@ chown -R 1000:1000 /boazy/data/dockerdata/jenkins_home/
 docker run -d --restart=always --name jenkins \
     -p 8088:8080 \
     -v /boazy/data/dockerdata/jenkins_home:/var/jenkins_home \
-    -t jenkins/jenkins:2.210
+    -v /etc/localtime:/etc/localtime \
+    -e JAVA_OPTS="-Duser.timezone=Asia/Shanghai -Dfile.encoding=UTF-8" \
+    -t jenkins/jenkins:2.210-centos
 ```
 
 ## 配置修改插件镜像地址
@@ -137,6 +139,7 @@ cat /boazy/data/dockerdata/jenkins_home/updates/default.json | grep http://updat
 # 
 # 采用 sed 命令修改替换
 sed -i 's/http:\/\/updates.jenkins-ci.org\/download/https:\/\/mirrors.tuna.tsinghua.edu.cn\/jenkins/g' updates/default.json
+sed -i 's/http:\/\/www.google.com/https:\/\/www.baidu.com/g' updates/default.json
 # 
 # 查看 default.json 文件中的 http://updates.jenkins-ci.org/download
 # 正常替换之后是查不到相关信息了
