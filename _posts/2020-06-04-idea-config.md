@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "IDEA 自定义配置"
+title:  "IDEA 设置"
 date:   2020-06-04 11:25:00
 categories: IDEA
 tags: IDEA
@@ -10,7 +10,7 @@ author: poazy
 * content
 {:toc}
 
-> 基于 IDEA 2020.1.1 版本自定义配置，包括截图记录和说明。
+> 基于 IDEA 2020.1.1 版本设置，包括截图记录和说明。
 
 
 
