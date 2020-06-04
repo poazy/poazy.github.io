@@ -19,7 +19,7 @@ author: poazy
 
 > 提交本地环境要先安装配置好 JDK
 
-```wiki
+```java
 File -> New Projects Settings -> Structure for New Projects... -> Project（对所有新建项目有效）
 File -> Project Stucture... -> Project Settings -> Project（仅对当前本项目有效）
 ```
@@ -32,7 +32,7 @@ File -> Project Stucture... -> Project Settings -> Project（仅对当前本项�
 
 > 前提本地环境要先安装配置好 Maven
 
-```wiki
+```java
 File -> New Projects Settings -> Structure for New Projects... -> Build,Execution,Deployment -> Build Tools -> Maven（对所有新建项目有效）
 File -> Settings... -> Build,Execution,Deployment -> Build Tools -> Maven（仅对当前本项目有效）
 ```
@@ -59,7 +59,7 @@ File -> Settings... -> Build,Execution,Deployment -> Build Tools -> Maven（仅�
 
 > 配置 IDEA 启动时不自动打开最后打开的项目，而是让 IDEA 启动后让用户选择要打开的项目
 
-```wiki
+```java
 File -> Settings... -> Appearance & Behavior -> System Settings
 ```
 
@@ -75,7 +75,7 @@ File -> Settings... -> Appearance & Behavior -> System Settings
 
 > 当在调用/运行时修改文件后让其自动编译修改的文件
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Build,Execution,Deployment -> Compiler（对所有新建项目有效）
 File -> Settings... -> Build,Execution,Deployment -> Compiler（仅对当前本项目有效）
 ```
@@ -90,7 +90,7 @@ File -> Settings... -> Build,Execution,Deployment -> Compiler（仅对当前本�
 
 > Lombok 需要对此选项设置
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Build,Execution,Deployment -> Compiler -> Annotation Processors（对所有新建项目有效）
 File -> Settings... -> Build,Execution,Deployment -> Compiler -> Annotation Processors（仅对当前本项目有效）
 ```
@@ -107,7 +107,7 @@ File -> Settings... -> Build,Execution,Deployment -> Compiler -> Annotation Proc
 >
 >设置文件行超过指定列宽时自动换行
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Editor -> Code Style （对所有新建项目有效）
 File -> Settings... -> Editor -> Code Style（仅对当前本项目有效）
 ```
@@ -122,7 +122,7 @@ File -> Settings... -> Editor -> Code Style（仅对当前本项目有效）
 
 # 配置文件编码
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Editor -> File Encodings （对所有新建项目有效）
 File -> Settings... -> Editor -> Editor -> File Encodings（仅对当前本项目有效）
 ```
@@ -141,7 +141,7 @@ File -> Settings... -> Editor -> Editor -> File Encodings（仅对当前本项�
 
 # 配置 Java 包导入
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Editor -> Code Style -> Java -> Imports （对所有新建项目有效）
 File -> Settings... -> Editor -> Code Style -> Java -> Imports（仅对当前本项目有效）
 ```
@@ -158,7 +158,7 @@ File -> Settings... -> Editor -> Code Style -> Java -> Imports（仅对当前本
 
 # 配置编辑器标签
 
-```wiki
+```java
 File -> Settings... -> Editor -> General -> Editor Tabs
 ```
 
@@ -174,7 +174,7 @@ File -> Settings... -> Editor -> General -> Editor Tabs
 
 # 配置不显示文件
 
-```wiki
+```java
 File -> Settings... -> Editor -> File Types
 ```
 
@@ -186,7 +186,7 @@ File -> Settings... -> Editor -> File Types
 
 # 配置编辑器字体
 
-```wiki
+```java
 File -> Settings... -> Editor -> Font
 ```
 
@@ -200,7 +200,7 @@ File -> Settings... -> Editor -> Font
 
 # 配置自动导入
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Other Settings -> Auto Import（对所有新建项目有效）
 File -> Settings... -> Editor -> General -> Auto Import（仅对当前本项目有效）
 ```
@@ -215,7 +215,7 @@ File -> Settings... -> Editor -> General -> Auto Import（仅对当前本项目�
 
 # 配置代码补全不大小区分
 
-```wiki
+```java
 File -> Settings... -> Editor -> General -> Code Completion
 ```
 
@@ -227,7 +227,7 @@ File -> Settings... -> Editor -> General -> Code Completion
 
 # 配置提醒 serialVersionUID 字段
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Editor -> Inspections（对所有新建项目有效）
 File -> Settings... -> Editor -> Inspections（仅对当前本项目有效）
 ```
@@ -244,7 +244,7 @@ File -> Settings... -> Editor -> Inspections（仅对当前本项目有效）
 
 # 配置代码补全快捷键
 
-```wiki
+```java
 File -> Settings... -> Keymap
 ```
 
@@ -258,7 +258,7 @@ File -> Settings... -> Keymap
 
 # 配置 SSH 终端编码
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Tools -> SHH Terminal（对所有新建项目有效）
 File -> Settings... -> Tools -> SHH Terminal（仅对当前本项目有效）
 ```
@@ -271,7 +271,7 @@ File -> Settings... -> Tools -> SHH Terminal（仅对当前本项目有效）
 
 # 配置提交代码前优化包导入
 
-```wiki
+```java
 File -> New Projects Settings -> Settings for New Projects... -> Version Control -> Commit（对所有新建项目有效）
 File -> Settings... -> Version Control -> Commit（仅对当前本项目有效）
 ```
