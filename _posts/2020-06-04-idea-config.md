@@ -279,3 +279,15 @@ File -> Settings... -> Version Control -> Commit（仅对当前本项目有效�
 > 勾选 Optimize imports
 
 ![](../images/20200604-idea-config/idea-vc-commit.png)
+
+
+
+# 配置内存显示器
+
+```java
+View -> Appearance -> Status Bar Widgets
+```
+
+> 勾选 Memory Indicator
+
+![](../images/20200604-idea-config/idea-show-memory.png)
