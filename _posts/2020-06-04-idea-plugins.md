@@ -140,6 +140,11 @@ author: poazy
 > 彩虹括号插件
 
 
+# HighlightBracketPair
+
+> 自动化高亮显示光标所在代码块对应的括号插件
+
+
 
 # SequenceDiagram
 
