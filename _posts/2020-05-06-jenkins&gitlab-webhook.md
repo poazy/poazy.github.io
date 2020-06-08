@@ -2,7 +2,7 @@
 layout: post
 title:  "Jenkins & GitLab 设置 Webhook 触发任务"
 date:   2020-05-06 22:00:00
-categories: Jenkins GitLab Webhook
+categories: GitLab
 tags: Jenkins GitLab Webhook
 author: poazy
 ---

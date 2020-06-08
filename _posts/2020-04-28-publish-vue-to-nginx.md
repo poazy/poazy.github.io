@@ -2,7 +2,7 @@
 layout: post
 title:  "Vue 前端部署到 Nginx（docker 版本）"
 date:   2020-04-28 22:30:00
-categories: Nginx Docker Vue
+categories: Vue
 tags: Nginx Docker Vue
 author: poazy
 ---

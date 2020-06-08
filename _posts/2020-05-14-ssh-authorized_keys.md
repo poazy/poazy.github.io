@@ -2,7 +2,7 @@
 layout: post
 title:  "通过 ssh 免密码登陆 Linux 机器"
 date:   2020-05-14 23:00:00
-categories: Linux SSH
+categories: SSH
 tags: Linux SSH
 author: poazy
 ---
