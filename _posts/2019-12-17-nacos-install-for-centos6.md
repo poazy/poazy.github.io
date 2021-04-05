@@ -319,3 +319,21 @@ server {
 ```bash
 docker exec -it nacos-ngx nginx -s reload
 ```
+
+# 附A-单实例
+```bash
+docker run -d --restart=always --name nacos \
+--net=host \
+-v /dsmm/data/dockerdata/nacos/logs:/home/nacos/logs \
+-v /dsmm/data/dockerdata/nacos/plugins/mysql:/home/nacos/plugins/mysql \
+--env NACOS_SERVER_PORT=8848 --env MODE=standalone \
+--env SPRING_DATASOURCE_PLATFORM=mysql \
+--env NACOS_SERVER_IP=192.168.9.241 \
+--env MYSQL_DATABASE_NUM=1 \
+--env MYSQL_MASTER_SERVICE_HOST=192.168.0.79 \
+--env MYSQL_MASTER_SERVICE_PORT=3316 \
+--env MYSQL_MASTER_SERVICE_DB_NAME=nacos_config \
+--env MYSQL_MASTER_SERVICE_USER=nacos \
+--env MYSQL_MASTER_SERVICE_PASSWORD=nacos \
+nacos/nacos-server:1.1.4
+```
