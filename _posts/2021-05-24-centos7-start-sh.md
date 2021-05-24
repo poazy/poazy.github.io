@@ -16,19 +16,19 @@ author: poazy
 
 
 
-## 修改 `rc.local` 方式
-### 对 sh 脚本文件授权
+## 1 修改 `rc.local` 方式
+### 1.1 对 sh 脚本文件授权
 ```bash
 chmod +x /poazy/middleware/hugegraph/hugegraph-0.11.2/bin/start-hugegraph.sh
 chmod +x /poazy/middleware/hugegraph/hugegraph-studio-0.11.0/bin/hugegraph-studio.sh
 chmod +x /poazy/middleware/hugegraph/hugegraph-hubble-1.5.0/bin/start-hubble.sh
 ```
-### 对 `rc.local` 授权
+### 1.2 对 `rc.local` 授权
 ```bash
 # 这一步必不可少，否则开机启动不成功
 chmod +x /etc/rc.d/rc.local
 ```
-### 在 `rc.local` 中添加启动
+### 1.3 在 `rc.local` 中添加启动
 ```bash
 vi /etc/rc.d/rc.local
 ```
