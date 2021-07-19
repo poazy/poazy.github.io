@@ -769,6 +769,12 @@ do bin/hugegraph --graph gdb0${N} --url http://192.168.0.89:18080 backup -t all 
 done
 ```
 
+> zip 打包备份
+
+```bash
+zip -r 720-gdb01-gdb02_$(date +%Y%m%d%H%M%S).zip gdb01 gdb02 gdb03 gdb04 gdb05 gdb06 gdb07 gdb08 gdb09
+```
+
 * 恢复
 
 > 这里演示将 gdb01~gdb08 实例的备份数据恢复（合并）到 gdb09 实例中！

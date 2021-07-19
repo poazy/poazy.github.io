@@ -35,7 +35,7 @@ mkdir -p /boazy/data/dockerdata/mnc && cd /boazy/data/dockerdata/mnc
 
 * 下载 my.cnf 文件
 
-```basg
+```bash
 wget https://raw.githubusercontent.com/mysql/mysql-docker/mysql-cluster/8.0/cnf/my.cnf
 ```
 
@@ -586,7 +586,7 @@ systemctl restart haproxy && systemctl status haproxy
 
 * 解决以上错误，要先设置 HAProxy 连接策略
 
-```bash\
+```bash
 setsebool -P haproxy_connect_any=1
 ```
 
