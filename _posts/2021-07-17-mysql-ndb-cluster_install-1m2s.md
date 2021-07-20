@@ -170,6 +170,8 @@ sed -i 's/ndb-connectstring=192.168.0.2/ndb-connectstring=ndb_mgmd1/g' /boazy/da
 > ndbcluster
 > ndb-connectstring=ndb_mgmd1
 > user=mysql
+> # 默认引擎使用 NDBCLUSTER！不设置是默认 InnoDB 引擎，InnoDB 引擎的表在 ndb cluster 下不会同步的！
+> default-storage-engine=NDBCLUSTER
 > 
 > [mysql_cluster]
 > ndb-connectstring=ndb_mgmd1
@@ -267,7 +269,7 @@ docker run -d --restart=always --name=ndb_mgmd1 --hostname=ndb_mgmd1 --net=ndbne
   -v /boazy/data/dockerdata/mnc/my.cnf:/etc/my.cnf \
   -v /etc/localtime:/etc/localtime:ro \
   -e "TZ=Asia/Shanghai" \
-  mysql/mysql-cluster:8.0.25 ndb_mgmd --ndb-nodeid=1
+  mysql/mysql-cluster:8.0.25 ndb_mgmd --ndb-nodeid=1 --reload
 ```
 
 * 安装运行 4 个 NDB 节点实例（数据实例）
@@ -677,6 +679,48 @@ CREATE TABLE `ktb_table_demo` (
   PRIMARY KEY (`id`)
 ) ENGINE=ndbcluster DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
+
+## [ERR] 1114 - The table 'XXX' is full
+
+> 错误信息
+>
+> ```bash
+> [ERR] 1114 - The table 'XXX' is full
+> ```
+
+* 查看内存使用情况（内存不够）
+
+```bash
+[root@centos7-qscft mnc]# docker exec -it ndb_mgmd1 ndb_mgm
+-- NDB Cluster -- Management Client --
+ndb_mgm> ALL REPORT MEMORYUSAGE
+Connected to Management Server at: ndb_mgmd1:1186
+Node 2: Data usage is 94%(2749 32K pages of total 2916)
+Node 2: Index usage is 57%(228 32K pages of total 395)
+Node 3: Data usage is 94%(2748 32K pages of total 2916)
+Node 3: Index usage is 57%(228 32K pages of total 396)
+Node 4: Data usage is 94%(2756 32K pages of total 2915)
+Node 4: Index usage is 59%(229 32K pages of total 388)
+Node 5: Data usage is 94%(2757 32K pages of total 2915)
+Node 5: Index usage is 59%(229 32K pages of total 387)
+
+ndb_mgm>
+```
+
+* 设置 DataMemory 和 IndexMemory 属性解决
+
+> 设置后启动管理节点命令要添加  --reload 参数，否则无效！
+
+```bash
+vi /boazy/data/dockerdata/mnc/mysql-cluster.cnf
+```
+
+> ```bash
+> DataMemory=1024M
+> IndexMemory=512MM
+> ```
+
+
 
 ## 与 InnoDB 的区别？
 
