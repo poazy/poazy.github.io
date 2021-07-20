@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker 安装 MySQL NDB Cluster(8.0.25)"
-date:   2020-07-13 23:30:00
+date:   2021-07-13 23:30:00
 categories: MySQL
 tags: MySQL
 author: poazy

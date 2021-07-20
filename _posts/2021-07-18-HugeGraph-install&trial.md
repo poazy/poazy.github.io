@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HugeGraph 安装及试用"
-date:   2020-07-17 23:00:00
+date:   2021-07-17 23:00:00
 categories: HugeGraph
 tags: HugeGraph
 author: poazy
