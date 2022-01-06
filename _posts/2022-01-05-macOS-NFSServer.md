@@ -9,7 +9,7 @@ author: poazy
 
 * content
 {:toc}
-> HugeGraph 安装及试用（hugegraph、hugegraph-studio、hugegraph-hubble、hugegraph-tools、hugegraph-loader）
+> macOS NFS Server 安装试用（配置共享目录、客户端挂载共享目录）
 
 
 
