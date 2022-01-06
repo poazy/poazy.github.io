@@ -15,9 +15,7 @@ author: poazy
 
 
 # NFS Server 配置
-
 ## 检查 nfsd 的状况
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % sudo nfsd status
 Password:
@@ -27,7 +25,6 @@ xxx@xxxdeMacBook-Pro ~ %
 ```
 
 ## 设置共享目录
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % sudo vi /etc/exports
 Password:
@@ -44,21 +41,18 @@ xxx@xxxdeMacBook-Pro ~ %
 > 
 
 ## 检查配置状态
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % nfsd checkexports
 xxx@xxxdeMacBook-Pro ~ % 
 ```
 
 ## 重启服务
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % sudo nfsd restart
 xxx@xxxdeMacBook-Pro ~ % 
 ```
 
 ## 查看挂载状态
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % showmount -e     
 Exports list on localhost:
@@ -68,7 +62,6 @@ xxx@xxxdeMacBook-Pro ~ %
 
 ## k8s 挂载设置
 > 在 Docker 容器中挂载上述 NFS 文件时一直提示 Permission Denied。经过大量查找资料，发现其实只需添加一项配置到/etc/nfs.conf 中
-
 ```bash
 xxx@xxxdeMacBook-Pro ~ % cat /etc/nfs.conf 
 #
@@ -85,11 +78,10 @@ xxx@xxxdeMacBook-Pro ~ % sudo nfsd update
 xxx@xxxdeMacBook-Pro ~ % 
 ```
 
-# 客户端使用
 
+# 客户端使用
 ## 挂载（远程）共享目录
 > 这里找一台远程机器（CentOS 7）作为客户端，挂载共享目录
-
 ```bash
 [root@localhost ~]# showmount -e 192.168.9.13
 Export list for 192.168.9.13:
@@ -108,8 +100,7 @@ mount.nfs: mount point /xxx/data/nfs-data does not exist
 ```
 
 ## 验证客户端创建的文件
-> 回到 macOS NFS Server 上查看共享目录有没有客户端创建的文件 xxx.txt 
-
+> 回到 macOS NFS Server 上查看共享目录有没有客户端创建的文件 xxx.txt
 ```bash
 xxx@xxxdeMacBook-Pro ~ % cd /Users/xxx/Volumes/nfs-share
 xxx@xxxdeMacBook-Pro nfs-share % ls -lh
@@ -119,7 +110,6 @@ xxx@xxxdeMacBook-Pro nfs-share %
 ```
 
 ## 客户端卸载 umount
-
 ```bash
 [root@localhost ~]# umount /xxx/data/nfs-data
 [root@localhost ~]# ls -h /xxx/data/nfs-data
