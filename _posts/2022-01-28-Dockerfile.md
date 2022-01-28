@@ -51,6 +51,11 @@ docker build -t permission-server:v0.0.1 \
 --build-arg FROM_IMAGE="openjdk:8-jre-alpine" \
 --no-cache --platform linux/amd64 .
 ```
+## push to swr
+```bash
+docker tag permission-server:v0.0.1 swr.cn-south-1.myhuaweicloud.com/boazy/permission-server:v0.0.1
+docker swr.cn-south-1.myhuaweicloud.com/boazy/permission-server:v0.0.1
+```
 
 # Vue 应用
 ## Dockerfile
@@ -96,4 +101,9 @@ docker build -t permission-front:v0.0.1 \
 --build-arg APP_NAME="permission-front" \
 --build-arg FROM_IMAGE="nginx:alpine" \
 --no-cache --platform linux/amd64 .
+```
+## push to swr
+```bash
+docker tag permission-front:v0.0.1 swr.cn-south-1.myhuaweicloud.com/boazy/permission-front:v0.0.1
+docker swr.cn-south-1.myhuaweicloud.com/boazy/permission-front:v0.0.1
 ```
