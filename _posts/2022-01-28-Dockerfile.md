@@ -9,7 +9,7 @@ author: poazy
 
 
 * content
-  {:toc}
+{:toc}
 > Spring Boot 应用和 Vue 应用的 Dockerfile 及打包镜像命令。
 
 

@@ -9,7 +9,7 @@ author: poazy
 
 
 * content
-  {:toc}
+{:toc}
 > Docker 方式安装短链接 Polr 并试用
 
 
