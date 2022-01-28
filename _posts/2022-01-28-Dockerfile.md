@@ -14,8 +14,8 @@ author: poazy
 
 
 
-## Spring Boot 应用
-### Dockerfile
+# Spring Boot 应用
+## Dockerfile
 ```bash
 ARG FROM_IMAGE="openjdk:8-jre-alpine"
 FROM $FROM_IMAGE
@@ -44,7 +44,7 @@ ENV APP_VERSION=$CURR_TIME
 ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom ${JAVA_OPTS} -jar /boazy/app/${APP_NAME}/${APP_NAME}.jar
 
 ```
-### docker build
+## docker build
 ```bash
 docker build -t permission-server:v0.0.1 \
 --build-arg APP_NAME="permission-server" \
@@ -52,8 +52,8 @@ docker build -t permission-server:v0.0.1 \
 --no-cache --platform linux/amd64 .
 ```
 
-## Vue 应用
-### Dockerfile
+# Vue 应用
+## Dockerfile
 ```bash
 ARG FROM_IMAGE="nginx:alpine"
 FROM $FROM_IMAGE
@@ -90,7 +90,7 @@ RUN sed -i '$i echo "CLIENT_MAX_BODY_SIZE=$CLIENT_MAX_BODY_SIZE"' /docker-entryp
 RUN sed -i '$i \ ' /docker-entrypoint.sh
 
 ```
-### docker build
+## docker build
 ```bash
 docker build -t permission-front:v0.0.1 \
 --build-arg APP_NAME="permission-front" \
