@@ -115,3 +115,7 @@ xxx@xxxdeMacBook-Pro nfs-share %
 [root@localhost ~]# ls -h /xxx/data/nfs-data
 [root@localhost ~]#
 ```
+
+# 附录
+## 转载链接
+https://blog.csdn.net/candyngwh/article/details/105427684
