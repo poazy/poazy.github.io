@@ -24,7 +24,7 @@ https://docs.polrproject.org/en/latest/developer-guide/api/
 
 ```bash
 docker run -d --name polr-dsmm -p 88:8080 \
-    -e "APP_NAME=DSMM Short Links" \
+    -e "APP_NAME=Poazy Short Links" \
     -e "DB_HOST=192.168.0.79" \
     -e "DB_PORT=3316" \
     -e "DB_DATABASE=polr" \
@@ -34,7 +34,7 @@ docker run -d --name polr-dsmm -p 88:8080 \
     -e "APP_ADDRESS=192.168.0.95:88" \
     -e "SETTING_PSEUDORANDOM_ENDING=true" \
     -e "SETTING_AUTO_API=true" \
-    -e "SETTING_ADV_ANALYTICS=true"
+    -e "SETTING_ADV_ANALYTICS=true" \
     -e "ADMIN_USERNAME=admin" \
     -e "ADMIN_PASSWORD=admin@123456" \
     ajanvier/polr:2.3.0b
