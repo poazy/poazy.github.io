@@ -4,4 +4,6 @@ _site
 .vscode
 .idea
 .DS_Store
-/poazy.github.io.iml
+*.iml
+*.ipr
+*.iws
