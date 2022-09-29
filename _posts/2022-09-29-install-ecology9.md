@@ -316,15 +316,15 @@ duanbo@duanbo-mbp devops %
 
 * 初始化数据库有些久
 
-![](../images/2022-09-29-install-ecology9/init-01.png)
+![](../images/20220929-install-ecology9/init-01.png)
 
-![](../images/2022-09-29-install-ecology9/init-02.png)
+![](../images/20220929-install-ecology9/init-02.png)
 
-![](../images/2022-09-29-install-ecology9/init-03.png)
+![](../images/20220929-install-ecology9/init-03.png)
 
-![](../images/2022-09-29-install-ecology9/init-04.png)
+![](../images/20220929-install-ecology9/init-04.png)
 
-![](../images/2022-09-29-install-ecology9/init-05.png)
+![](../images/20220929-install-ecology9/init-05.png)
 
 ### 重启 Resin
 
@@ -348,10 +348,15 @@ duanbo@duanbo-mbp devops %
 license文件：【识别码发给厂商获取】
 ```
 
-![](../images/2022-09-29-install-ecology9/login-01.png)
+![](../images/20220929-install-ecology9/login-01.png)
 
-![](../images/2022-09-29-install-ecology9/login-02.png)
+![](../images/20220929-install-ecology9/login-02.png)
 
+![](../images/20220929-install-ecology9/login-03.png)
+
+![](../images/20220929-install-ecology9/login-04.png)
+
+![](../images/20220929-install-ecology9/login-05.png)
 
 
 
@@ -366,9 +371,17 @@ license文件：【识别码发给厂商获取】
 
 #### 初始化时数据库错误
 
-![](../images/2022-09-29-install-ecology9/db-error-01.png)
+![](../images/20220929-install-ecology9/db-error-01.png)
 
 * 看这个，就可以知道 MySQL 数据库的配置值要设置什么才能成功
 
-![](../images/2022-09-29-install-ecology9/db-error-02.png)
+![](../images/20220929-install-ecology9/db-error-02.png)
+
+#### License提交错误
+
+* 按提示检查 ecology/license 下是否空，再重新上传提交
+
+![](../images/20220929-install-ecology9/license-error-01.jpeg)
+
+
 
