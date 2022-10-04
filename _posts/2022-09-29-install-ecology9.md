@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "本地环境部署 E9（Ecology9）"
-date:   2022-09-9 13:00:00
+date:   2022-09-09 13:00:00
 categories: Ecology
 tags: Ecology Ecology9 E9
 author: poazy
