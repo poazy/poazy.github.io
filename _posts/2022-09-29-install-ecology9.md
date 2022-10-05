@@ -191,18 +191,18 @@ Query OK, 1 row affected (0.01 sec)
 ### 解压  Resin 和 Ecology
 
 ```bash
-cd /Users/duanbo/devops
+cd /Users/duanbo/devops/weaver
 unzip Resin-4.0.58.zip
 unzip Ecology9.00.2206.03.zip
 ```
 
 ```bash
-duanbo@duanbo-mbp devops % ls -lh
+duanbo@duanbo-mbp weaver % ls -lh
 -rw-r--r--@   1 duanbo  staff   2.7G Sep 29 10:36 Ecology9.00.2206.03.zip
 -rw-r--r--@   1 duanbo  staff    73M Sep 29 11:39 Resin-4.0.58.zip
 drwxr-xr-x@  45 duanbo  staff   1.4K Sep 29 12:12 Resin4
 drwxr-xr-x@ 232 duanbo  staff   7.3K Sep 29 11:46 ecology
-duanbo@duanbo-mbp devops % 
+duanbo@duanbo-mbp weaver % 
 ```
 
 ### 授权 Resin 目录
@@ -219,7 +219,7 @@ chmod +x resin4
 * 添加 ulimit、LC_ALL、LANG 配置
 
 ```bash
-vi /Users/duanbo/devops/Resin4/bin/resin.sh
+vi /Users/duanbo/devops/weaver/Resin4/bin/resin.sh
 ```
 
 ```bash
@@ -240,7 +240,7 @@ export LANG=zh_CN.gbk
 * 可根据情况调 端口、JVM参数，这里不调整
 
 ```bash
-vi /Users/duanbo/devops/Resin4/conf/resin.properties
+vi /Users/duanbo/devops/weaver/Resin4/conf/resin.properties
 ```
 
 ```bash
@@ -252,7 +252,7 @@ vi /Users/duanbo/devops/Resin4/conf/resin.properties
 * 调整  java 标签 的 compiler 属性值和 web-app 标签的 root-directory 属性值
 
 ```bash
-vi /Users/duanbo/devops/Resin4/conf/resin.xml
+vi /Users/duanbo/devops/weaver/Resin4/conf/resin.xml
 ```
 
 ```bash
@@ -266,7 +266,7 @@ vi /Users/duanbo/devops/Resin4/conf/resin.xml
 		  <!--
          - webapps can be overridden/extended in the resin.xml
         -->
-      <web-app id="/" root-directory="/Users/duanbo/devops/ecology">
+      <web-app id="/" root-directory="/Users/duanbo/devops/weaver/ecology">
 				<servlet-mapping url-pattern='/weaver/*' servlet-name='invoker'/>
 				<form-parameter-max>100000</form-parameter-max>
       </web-app>
@@ -275,17 +275,17 @@ vi /Users/duanbo/devops/Resin4/conf/resin.xml
 ### 启动 Resion
 
 ```bash
-sh /Users/duanbo/devops/Resin4/bin/resin.sh start
-sh /Users/duanbo/devops/Resin4/bin/resin.sh stop
-sh /Users/duanbo/devops/Resin4/bin/resin.sh restart
-sh /Users/duanbo/devops/Resin4/bin/resin.sh status
+sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh start
+sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh stop
+sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh restart
+sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh status
 ```
 
 ```bash
-duanbo@duanbo-mbp devops % sh /Users/duanbo/devops/Resin4/bin/resin.sh start
+duanbo@duanbo-mbp weaver % sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh start
 Resin/4.0.58 launching watchdog at 127.0.0.1:6600
 Resin/4.0.58 started -server 'app-0' with watchdog at 127.0.0.1:6600
-duanbo@duanbo-mbp devops %
+duanbo@duanbo-mbp weaver %
 ```
 
 
@@ -305,13 +305,13 @@ http://192.168.9.155
 
 ```bash
 ### 查询验证码
-cat /Users/duanbo/devops/ecology/WEB-INF/code.key
+cat /Users/duanbo/devops/weaver/ecology/WEB-INF/code.key
 ```
 
 ```bash
-duanbo@duanbo-mbp devops % cat /Users/duanbo/devops/ecology/WEB-INF/code.key
+duanbo@duanbo-mbp weaver % cat /Users/duanbo/devops/weaver/ecology/WEB-INF/code.key
 wEAver2018                                                                                                                                                                                                                               
-duanbo@duanbo-mbp devops % 
+duanbo@duanbo-mbp weaver % 
 ```
 
 * 初始化数据库有些久
@@ -331,12 +331,12 @@ duanbo@duanbo-mbp devops %
 * 初始化成功后，重启 Resin
 
 ```bash
-sh /Users/duanbo/devops/Resin4/bin/resin.sh restart
+sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh restart
 ```
 ```bash
-duanbo@duanbo-mbp devops % sh /Users/duanbo/devops/Resin4/bin/resin.sh restart
+duanbo@duanbo-mbp weaver % sh /Users/duanbo/devops/weaver/Resin4/bin/resin.sh restart
 Resin/4.0.58 restarted -server 'app-0' for watchdog at 127.0.0.1:6600
-duanbo@duanbo-mbp devops %
+duanbo@duanbo-mbp weaver %
 ```
 
 ### 登入系统
