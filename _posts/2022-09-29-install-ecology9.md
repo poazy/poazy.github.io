@@ -385,3 +385,59 @@ license文件：【识别码发给厂商获取】
 
 
 
+### 移动安装目录
+
+#### 要修改相关文件里的路径
+
+* 可以找工具批量查找修改
+
+#### 要修改数据库里的路径
+
+* 查询及修改示例
+
+```sql
+# 【设置中心】【参数设置】【系统设置】中文档、图片、邮件副本、备份目录设置
+select filesystem,filesystembackup,picturePath,emlpath from SystemSet;
+# update SystemSet set filesystem = replace(filesystem, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver'), filesystembackup = replace(filesystembackup, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver'), picturePath = replace(picturePath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver'), emlPath = replace(emlPath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 印章图片存储路径指向
+select markPath from DocSignature;
+# update DocSignature set markPath = replace(markPath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 文档模板存储路径指向
+select mouldPath from DocMould;
+# update DocMould set mouldPath = replace(mouldPath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 文档(镜像文件)存储路径指向
+select filerealpath from ImageFile;
+# update ImageFile set filerealpath = replace(filerealpath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 合同模板表存储路径
+select mouldPath from DocMouldFile;
+# update DocMouldFile set mouldPath = replace(mouldPath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# html 表单模板的路径
+select syspath from workflow_nodehtmllayout;
+# update workflow_nodehtmllayout set syspath = replace(syspath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 邮件文件存放目录
+SELECT filerealpath from mailResourceFile;
+# update mailResourceFile set filerealpath = replace(filerealpath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 邮件副本文件存放目录
+SELECT emlpath from mailResource;
+# update mailResource set emlpath = replace(emlpath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 全文检索的路径(若使用了此功能)
+# 修改 ecology\WEB-INF\ searchConf.properties 文 件 中 index.dbpath=d:/ecology/fullsearch 为实际的索引存放路径。
+# 修改字典的路径 ecology\classbean\paoding-dic-home.properties 文件中 paoding.dic.home=D:/ecology/dic 为实际的字典放置路径。
+
+# 文档元素缩略图的路径
+SELECT FILEREALPATH from hpElementImg;
+# update hpElementImg set FILEREALPATH = replace(FILEREALPATH, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+
+# 表单建模的模板路径
+SELECT syspath from modehtmllayout;
+# update modehtmllayout set syspath = replace(syspath, '/Users/duanbo/devops', '/Users/duanbo/devops/weaver');
+```
+
