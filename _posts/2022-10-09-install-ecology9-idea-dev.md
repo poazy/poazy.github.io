@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "E9（Ecology9）本地开发环境搭建"
-date:   2022-10-09 18:00:00
+date:   2022-10-09 20:00:00
 categories: Ecology
-tags: Ecology Ecology9 E9 IDEA Resin
+tags: Ecology Ecology9 E9
 author: poazy
 ---
 
