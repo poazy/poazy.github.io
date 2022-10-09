@@ -142,6 +142,26 @@ author: poazy
 
 ![](../images/20221009-install-ecology9-idea-dev/99error-01.png)
 
+```bash
+[2022.10.09 14:24:41.903]>>>>Xss(Exception):sw=com.caucho.jsp.JspParseException: javac: 无效的标记: IDEA.app/Contents/lib/idea_rt.jar:/Users/duanbo/Library/Caches/JetBrains/IntelliJIdea2022.1/captureAgent/debugger-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar...
+
+[2022.10.09 14:24:41.906]用法: javac <options> <source files>
+-help 用于列出可能的选项
+at com.caucho.jsp.JspCompilerInstance.compile(JspCompilerInstance.java:448)
+at com.caucho.jsp.JspManager.compile(JspManager.java:286)
+at com.caucho.jsp.JspManager.createPage(JspManager.java:192)
+at com.caucho.jsp.JspManager.createPage(JspManager.java:173)...
+
+[2022.10.09 14:24:41.907]	at com.caucho.env.thread2.ResinThread2.run(ResinThread2.java:118)
+Caused by: com.caucho.java.JavaCompileException: javac: 无效的标识: IDEA.app/Contents/lib/idea_rt.jar:/Users/duanbo/Library/Caches/JetBrains/IntelliJIdea2022.1/captureAgent/debugger-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar...
+                         
+[2022.10.09 14:24:41.907]用法: javac <options> <source files>
+-help 用于列出可能的选项
+at com.caucho.java.ExternalCompiler.compileInt(ExternalCompiler.java:263)
+at com.caucho.java.AbstractJavaCompiler.run(AbstractJavaCompiler.java:112)
+... 2 more
+```
+
 ![](../images/20221009-install-ecology9-idea-dev/99error-02.png)
 
 ![](../images/20221009-install-ecology9-idea-dev/99error-bug-03.png)
