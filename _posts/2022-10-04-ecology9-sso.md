@@ -3,7 +3,7 @@ layout: post
 title:  "第三方单点登陆 E9（Ecology9）"
 date:   2022-10-04 11:00:00
 categories: Ecology
-tags: Ecology Ecology9 E9
+tags: Ecology
 author: poazy
 ---
 
