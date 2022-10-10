@@ -171,3 +171,6 @@ at com.caucho.java.AbstractJavaCompiler.run(AbstractJavaCompiler.java:112)
 > 将 `IntelliJ IDEA.app` 重命名为 `IntelliJIDEA.app` 去掉中间的空格，后再重新打开 IDEA 后，再启动 Resin 。
 
 ![](../images/20221009-install-ecology9-idea-dev/99error-fix-04.png)
+
+
+
