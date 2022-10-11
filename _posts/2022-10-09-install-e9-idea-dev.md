@@ -116,6 +116,8 @@ author: poazy
 
 ![](../images/20221009-install-ecology9-idea-dev/08resin-plugin-cfg-02.png)
 
+>VM options:  -DLC_ALL=zh_CN.gbk -DLANG=zh_CN.gbk -Djava.net.preferIPv4Stack=true
+
 ![](../images/20221009-install-ecology9-idea-dev/08resin-plugin-cfg-03.png)
 
 ### 启动 Resin
